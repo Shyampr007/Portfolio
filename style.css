@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #020617;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+}
+
+.hero-content h2 {
+    color: #38bdf8;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.hero-content p {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 14px 32px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.12);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.section.dark {
+    background: #020617;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #0f172a;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* PROJECT CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 320px;
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.4);
+}
+
+.card span {
+    display: block;
+    margin-top: 15px;
+    color: #38bdf8;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: #020617;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.2s forwards;
+}
+
+.delay {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* SCROLL REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 80px 8%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding: 0 20px;
+    }
+
+    .btn {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+}
+/* SKILL BARS */
+.skill-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.skill-bar p {
+    margin-bottom: 5px;
+}
+
+.bar {
+    background: #0f172a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 12px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    width: 0;
+    animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+    to { width: inherit; }
+}
