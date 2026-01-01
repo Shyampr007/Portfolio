@@ -10,7 +10,13 @@
 
 <!-- HERO -->
 <section class="hero">
+    <div id="particles-js"></div>
+
     <div class="hero-content">
+
+
+        
+
         <h1 class="fade-in">Shyam Prakash Suresh</h1>
         <h2 class="slide-up">Robotics Engineer • AI Enthusiast</h2>
         <p class="slide-up delay">
@@ -18,24 +24,81 @@
         </p>
 
         <div class="buttons fade-in delay">
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-    <a href="https://github.com/Shyampr007" target="_blank" class="btn outline">GitHub</a>
-    <a href="https://www.linkedin.com/in/shyam-prakash-suresh-03879331b" target="_blank" class="btn outline">LinkedIn</a>
-</div>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+            <a href="https://github.com/Shyampr007" target="_blank" class="btn outline">GitHub</a>
+            <a href="https://www.linkedin.com/in/shyam-prakash-suresh-03879331b" target="_blank" class="btn outline">LinkedIn</a>
+        </div>
 
     </div>
 </section>
 
+
 <!-- ABOUT -->
-<section class="section reveal">
+<section class="section reveal" id="about">
     <h2>About Me</h2>
     <p>
-        I am an aspiring Robotics Engineer with a strong interest in Artificial Intelligence.
-        I am passionate about problem solving, embedded systems, and intelligent automation.
-        I aim to continuously improve my skills and build innovative robotic solutions that
-        solve real-world problems.
+        I am a second-year B.Tech CSE student specializing in Artificial Intelligence and Robotics at VIT Chennai.
+        I am passionate about problem solving, robotics, embedded systems, and building intelligent real-world solutions.
     </p>
+
+    <div class="highlights">
+        <div>🤖 AI & Robotics Enthusiast</div>
+        <div>💡 Strong Problem Solver</div>
+        <div>⚙️ Embedded Systems</div>
+        <div>🚀 Self-Motivated Learner</div>
+    </div>
 </section>
+<!-- TIMELINE -->
+<section class="section dark reveal" id="timeline">
+    <h2>My Journey</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2024 – Present</h3>
+                <p>
+                    B.Tech Computer Science & Engineering (AI & Robotics)  
+                    <br>VIT Chennai  
+                    <br>Currently in Second Year, CGPA: 9.13
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2024</h3>
+                <p>
+                    Built embedded systems and robotics projects including
+                    Line Following Robot using Arduino and sensors.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2025</h3>
+                <p>
+                    Developed an AI-based Fire Detection and Automatic
+                    Extinguisher system using computer vision and object detection.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Future Goal</h3>
+                <p>
+                    Aspiring Robotics Engineer aiming to build intelligent
+                    AI-powered robotic systems and real-world automation solutions.
+                </p>
+            </div>
+        </div>
+    </section>
 
 <!-- SKILLS -->
 <section class="section dark reveal">
@@ -66,32 +129,61 @@
         <div class="bar"><span style="width:80%"></span></div>
     </div>
 </section>
+<!-- ACADEMIC PERFORMANCE -->
+<section class="section reveal" id="academics">
+    <h2>Academic Performance</h2>
+
+    <div class="cards">
+
+        <div class="card cgpa-card">
+            <h3>Current CGPA</h3>
+            <p class="cgpa-value">9.13</p>
+            <p>
+                B.Tech CSE (AI & Robotics)<br>
+                VIT Chennai<br>
+                Second Year (2024 – 2028)
+            </p>
+        </div>
+
+    </div>
+</section>
 
 
 <!-- PROJECTS -->
-<section class="section reveal">
+<section class="section reveal" id="projects">
     <h2>Projects</h2>
 
     <div class="cards">
+
         <div class="card">
             <h3>Line Following Robot</h3>
             <p>
-                Designed and developed an autonomous robot that detects and follows a black line
-                using IR sensors and real-time motor control logic.
+                Designed and developed an autonomous robot that follows a black line path using IR sensors
+                and real-time motor control logic.
             </p>
-            <span>Arduino • IR Sensors • Motor Driver</span>
+            <div class="tags">
+                <span>Arduino</span>
+                <span>IR Sensors</span>
+                <span>Embedded C</span>
+            </div>
         </div>
 
         <div class="card">
             <h3>Fire Detection & Automatic Extinguisher</h3>
             <p>
                 Built an AI-based fire detection system using object detection to locate fire,
-                calculate its center, and automatically extinguish it at the source.
+                identify the center point, and extinguish it automatically.
             </p>
-            <span>Computer Vision • AI • Embedded Systems</span>
+            <div class="tags">
+                <span>AI</span>
+                <span>Computer Vision</span>
+                <span>Embedded Systems</span>
+            </div>
         </div>
+
     </div>
 </section>
+
 
 <!-- CONTACT -->
 <section class="section dark reveal">
@@ -102,8 +194,16 @@
 
 <footer class="footer">
     <p>© 2026 Shyam Prakash Suresh</p>
+    <p class="social-links">
+        <a href="https://github.com/Shyampr007" target="_blank">GitHub</a> •
+        <a href="https://www.linkedin.com/in/shyam-prakash-suresh-03879331b" target="_blank">LinkedIn</a> •
+        <a href="https://www.instagram.com/_.shyam_prakash_07" target="_blank">Instagram</a>
+    </p>
 </footer>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
